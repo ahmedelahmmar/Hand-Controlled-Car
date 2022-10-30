@@ -59,9 +59,9 @@ void ReadySteadyGo(void)
 	LCD_voidDisplayStr(".");
 	_delay_ms(6000);
 
+	LCD_voidCMD(_LCD_CLEAR);
 	LCD_voidMatrix(0,0);
-
-	LCD_voidDisplayStr("GO!");
+	LCD_voidDisplayStr("GO!!!!");
 
 }
 

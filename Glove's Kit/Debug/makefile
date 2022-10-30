@@ -54,7 +54,6 @@ R.E.M1.lss \
 
 FLASH_IMAGE += \
 R.E.M1.hex \
-R.E.M1.hex \
 
 SIZEDUMMY += \
 sizedummy \

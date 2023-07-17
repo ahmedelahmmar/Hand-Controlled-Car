@@ -9,9 +9,6 @@
 #define SOURCES_5__PROJECT_GLOVE_SENDER_INCLUDES_GLOVE_SENDER_H_
 #include "DIO.h"
 #include "UART.h"
-#include "DC_Motor.h"
-#include "DC_Direction.h"
-#include "DC_MOTOR_Type.h"
 #include "ADC.h"
 
 void GloveSendInit(void);

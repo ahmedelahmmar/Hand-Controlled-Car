@@ -26,50 +26,50 @@
 
 void ReadySteadyGo(void)
 {
-	LCD_voidCMD(_LCD_CLEAR);
-	LCD_voidMatrix(0,0);
-	//LCD_voidDisplayStr("ADC STEPS: ");
-	LCD_voidDisplayStr("HI!!!");
-	_delay_ms(4000);
-	LCD_voidCMD(_LCD_CLEAR);
-	LCD_voidMatrix(0,0);
-	LCD_voidDisplayStr("READY");
-	_delay_ms(400);
-	LCD_voidMatrix(0,5);
-	LCD_voidDisplayStr(".");
-	_delay_ms(400);
-	LCD_voidMatrix(0,6);
-	LCD_voidDisplayStr(".");
-	_delay_ms(400);
-	LCD_voidMatrix(0,7);
-	LCD_voidDisplayStr(".");
-	_delay_ms(6000);
-
-	LCD_voidCMD(_LCD_CLEAR);
-	LCD_voidMatrix(0,0);
-	LCD_voidDisplayStr("STEADY");
-	_delay_ms(400);
-	LCD_voidMatrix(0,6);
-	LCD_voidDisplayStr(".");
-	_delay_ms(400);
-	LCD_voidMatrix(0,7);
-	LCD_voidDisplayStr(".");
-	_delay_ms(400);
-	LCD_voidMatrix(0,8);
-	LCD_voidDisplayStr(".");
-	_delay_ms(6000);
-
-	LCD_voidCMD(_LCD_CLEAR);
-	LCD_voidMatrix(0,0);
-	LCD_voidDisplayStr("GO!!!!");
+//	LCD_voidCMD(_LCD_CLEAR);
+//	LCD_voidMatrix(0,0);
+//	//LCD_voidDisplayStr("ADC STEPS: ");
+//	LCD_voidDisplayStr("HI!!!");
+//	_delay_ms(4000);
+//	LCD_voidCMD(_LCD_CLEAR);
+//	LCD_voidMatrix(0,0);
+//	LCD_voidDisplayStr("READY");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,5);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,6);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,7);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(6000);
+//
+//	LCD_voidCMD(_LCD_CLEAR);
+//	LCD_voidMatrix(0,0);
+//	LCD_voidDisplayStr("STEADY");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,6);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,7);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(400);
+//	LCD_voidMatrix(0,8);
+//	LCD_voidDisplayStr(".");
+//	_delay_ms(6000);
+//
+//	LCD_voidCMD(_LCD_CLEAR);
+//	LCD_voidMatrix(0,0);
+//	LCD_voidDisplayStr("GO!!!!");
 
 }
 
 void GloveSendInit(void)
 {
 	UART_voidInit(9600,UART_PARITY_DISABLED,UART_AsynchronousOperation,UART_STOP_2_BIT);
-	UART_Init(9600);
-	DC_Motor_voidInit();
+//	UART_Init(9600);
+//	DC_Motor_voidInit();
 	//ADC_voidInit();
 	ADC_voidInit(ADC_AVCC);
 
@@ -165,9 +165,9 @@ void Execute_glove_sender()
 	else if(IndexFinger_IsBent()){
 		if(MiddleFinger_IsBent()){
 			//lights
-			LED_voidFLASH(LED0);
-			LED_voidFLASH(LED1);
-			LED_voidFLASH(LED2);
+//			LED_voidFLASH(LED0);
+//			LED_voidFLASH(LED1);
+//			LED_voidFLASH(LED2);
 			return;
 		}
 		else{

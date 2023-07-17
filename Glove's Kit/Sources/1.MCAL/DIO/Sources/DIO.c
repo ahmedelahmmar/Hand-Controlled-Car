@@ -9,10 +9,6 @@
 #include "DIO_REG.h"
 #include "Std_Types.h"
 
-#include "LED.h"
-#include "Button.h"
-#include "BUZZER.h"
-#include "SSD.h"
 #include "LCD.h"
 #include "ADC.h"
 
@@ -200,10 +196,7 @@ void DIO_voidFlipChannel(DIO_PORT_T port,DIO_PIN_T pin)
 }
 void WakeUp_Call(void)
 {
-	LED_voidInit();
-	BUTTONS_voidInit();
-	Buzzer_voidInit();
-	SSD_voidInit();
+
 	LCD_voidInit();
 	ADC_voidInit(ADC_AVCC);
 }
